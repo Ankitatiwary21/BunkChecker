@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Should I Bunk?</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Should I Bunk? 🤔</h1>
+
+            <div class="input-group">
+                <label for="total"><i class="fa-solid fa-list-ol"></i> Total Classes</label>
+                <input type="number" id="total">
+            </div>
+
+            <div class="input-group">
+                <label for="attended"><i class="fa-solid fa-user-check"></i> Attended Classes</label>
+                <input type="number" id="attended">
+            </div>
+
+            <div class="input-group">
+                <label for="bunk"><i class="fa-solid fa-bed"></i> Future Bunks Planned</label>
+                <input type="number" id="bunk">
+            </div>
+
+            <button onclick="checkBunk()">Check</button>
+
+            <p id="result" class="feedback"></p>
+
+            <canvas id="attendanceChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
